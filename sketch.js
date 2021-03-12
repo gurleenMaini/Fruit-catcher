@@ -3,7 +3,7 @@ var back_img;
 var gameState =0;
 var playerCount = 0;
 var allPlayers;
-var index= 0;
+var form;
 var score =0;
 var player, form,game;
 var player1,player2;
@@ -40,12 +40,12 @@ function draw() {
   // Add conditions for gameStates and playerCount
   if(playerCount=== 2){
     game.update(1);
+    //gameState= 1;
   }
 
   if(gameState=== 1){
     clear();
     game.play();
-    form.hide();
   }
   
   if(gameState=== 2){
